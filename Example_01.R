@@ -9,6 +9,9 @@ droplets()
 my_droplet_name <- "Eric-RStudio"
 my_droplet <- droplet_create(name=my_droplet_name, image="rstudio-20-04")
 
+# Or, could create a Ubuntu Server with Docker!
+#my_droplet_name <- "Eric-Docker"
+#my_droplet <- droplet_create(name=my_droplet_name, image="docker-20-04")
 
 # Get info about this new droplet
 as.droplet(my_droplet_name)
